@@ -44,7 +44,7 @@ class JobContext extends Context
         return Context::has(self::JOB_LOG_ID_KEY);
     }
 
-    public static function setJobLogId(int $logId): void
+    public static function setJobLogId(?int $logId): void
     {
         Context::set(self::JOB_LOG_ID_KEY, $logId);
     }

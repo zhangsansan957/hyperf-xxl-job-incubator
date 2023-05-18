@@ -16,7 +16,7 @@ use JetBrains\PhpStorm\Pure;
 class BaseRequest
 {
     #[Pure]
-    public static function create(array $data = []): static
+    public static function create(array $data = [])
     {
         $obj = new static();
         foreach ($data as $k => $v) {
